@@ -40,19 +40,7 @@ object NonEmptyRangedSeq {
 //          }
 //        }).reverse
 //      }
-    }
 
-  def insert(rangedSeq : NonEmptyRangedSeq)(n : Int) : NonEmptyRangedSeq = {
-    def go(seq : Seq[(Int, Int)], acc : Seq[(Int, Int)]) : Seq[(Int, Int)] = {
-      seq match {
-        case (lower, upper) +: tail =>
-          if(n >= lower && n <= upper)
-            acc.reverse ++ seq
-          else if(n == lower-1)
-            go(tail, acc.+:((n, upper)))
-        case Seq() =>
-          acc
-      }
-    }
-  }
+
+
 }
