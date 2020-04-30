@@ -49,7 +49,7 @@ object PPrimeWindows {
     getBoundedValueIndex(None, None, 0)
   }*/
 
-  def evaluateWindow(primes: Array[Int], expectedNb: Int)(w: IndexedSeq[Int]) : Boolean = {
+  def evaluateWindow(primes: Set[Int], expectedNb: Int)(w: IndexedSeq[Int]) : Boolean = {
     //countPrimeInRange(primes, w.head, w.last).getOrElse(0) >= expectedNb
     w.count(x => primes.contains(x)) >= expectedNb
   }
