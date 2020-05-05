@@ -22,18 +22,18 @@ object Incidium {
     @scala.annotation.tailrec
     def go(acc: Seq[Int], valueAcc: Int, i: Int): Seq[Int] = {
       if(acc.length == n) {
-        if(valueAcc != n) Seq.empty else acc
+        acc
       } else if(acc.isEmpty) {
         val gd = greaterDivisor(n, k, n)
         if(gd == 0)
-          Seq()
+          Seq.empty
         else if(gd == n - 1)
           go(Seq.fill(n-2)(n), valueAcc + n * (n-2), i - 1)
         else
-          go(Seq.fill(gd)(n), valueAcc + n * (n-1), i - 1)
+          go(Seq.fill(gd)(n), valueAcc + n * gd, i - 1)
       } else {
         val placeLeft = n - acc.length
-        val gd = greaterDivisor(placeLeft, k - valueAcc, i)
+        val gd = if(placeLeft - 1 >= n - valueAcc) greaterDivisor(placeLeft, k - valueAcc, i)
         val newAcc = if(gd == 0) acc else  acc ++ Seq.fill(gd)(i)
         go(newAcc, valueAcc + i * gd, i - 1)
       }
@@ -66,7 +66,7 @@ object Incidium {
 
 
   def main(args: Array[String]): Unit = {
-    val test = getTrace(15, 4)
+    val test = getTrace(10, 4)
     println(test)
   }
 }
