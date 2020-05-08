@@ -4,6 +4,7 @@ object Incidium {
 
   type Matrix = Array[Array[Int]]
   type Mask = Array[Set[Int]]
+
   @scala.annotation.tailrec
   private def greaterDivisor(placeLeft: Int, dividend: Int, divisor: Int) :Int = {
     if(divisor <= 0)
@@ -48,9 +49,28 @@ object Incidium {
 
   private def getMasks(trace: Seq[Int]): Mask = {
     trace.foldLeft(Array.empty[Set[Int]])((acc, e) => {
-      val set = (for(i <- trace.indices if i != e) yield i).toSet
+      val set = (for(i <- trace.indices) yield if(i == e) 0 else i).toSet
       acc.:+(set)
     })
+  }
+
+  private def getAvailableCols(colMask: Mask, value: Int, currentRowIndex: Int): Array[Int] = {
+    colMask.zipWithIndex.collect {
+      case (valuesSet, index) if index != currentRowIndex && valuesSet.contains(value) => index
+    }
+  }
+
+  private def getFilledRow(traceValue: Int, traceIndex: Int, dispatch: Seq[(Int, Array[Int])]): Array[Int] = {
+    val start: Array[Int] = (for(i <- 0 to dispatch.length) yield if (i == traceIndex) traceValue else 0).toArray
+    (0 to dispatch.length).foldLeft(start) {
+      case (acc, `traceIndex`) => acc
+      case (acc, index) =>
+        val (value, positions) = dispatch(index)
+        val position = positions
+          .collectFirst { case x if x == 0 => x }
+          .getOrElse(throw new IllegalArgumentException(""))
+        acc.updated(positions(position), value)
+    }
   }
 
   def fillMatrix(trace: Seq[Int]): Matrix = {
@@ -58,10 +78,14 @@ object Incidium {
       if(acc.length == trace.length)
         acc
       else {
-        val currentRow = trace.length - acc.length
-        currentRow
+        val currentRow = trace.length - acc.length - 1
+        val possibleDispatch = (for ((rmValue, index) <- rowMask(currentRow).zipWithIndex if index != currentRow)
+            yield (rmValue, getAvailableCols(colMask, rmValue, currentRow)))
+          .toSeq
+          .sortBy(x => x._2.length)
+        val filledRow = getFilledRow(traceValue = trace(currentRow), traceIndex = currentRow, possibleDispatch.sortBy(x => x._2.length))
+        buildResult(acc.:+(filledRow), rowMask, colMask)
       }
-
     }
 
     val mask = getMasks(trace)
