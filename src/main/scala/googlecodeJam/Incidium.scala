@@ -3,7 +3,7 @@ package googlecodeJam
 object Incidium {
 
   type Matrix = Array[Array[Int]]
-
+  type Mask = Array[Set[Int]]
   @scala.annotation.tailrec
   private def greaterDivisor(placeLeft: Int, dividend: Int, divisor: Int) :Int = {
     if(divisor <= 0)
@@ -18,28 +18,54 @@ object Incidium {
     }
   }
 
-  private def getTrace(k: Int, n: Int) : Seq[Int] = {
+  def getTrace(k: Int, n: Int) : Seq[Int] = {
     @scala.annotation.tailrec
     def go(acc: Seq[Int], valueAcc: Int, i: Int): Seq[Int] = {
-      if(acc.length == n) {
-        acc
-      } else if(acc.isEmpty) {
+      val placeLeft = n - acc.length
+      if(acc.length == n && valueAcc != k)
+        Seq.empty
+      else if(acc.length == n)
+       acc
+      else if(acc.isEmpty) {
         val gd = greaterDivisor(n, k, n)
         if(gd == 0)
           Seq.empty
         else if(gd == n - 1)
           go(Seq.fill(n-2)(n), valueAcc + n * (n-2), i - 1)
+        else if((k - valueAcc) - (gd * i)  < (placeLeft - gd))
+          go(acc, valueAcc, i - 1)
         else
-          go(Seq.fill(gd)(n), valueAcc + n * gd, i - 1)
+          go(Seq.fill(gd)(i), valueAcc + i * gd, i)
       } else {
-        val placeLeft = n - acc.length
-        val gd = if(placeLeft - 1 >= n - valueAcc) greaterDivisor(placeLeft, k - valueAcc, i)
-        val newAcc = if(gd == 0) acc else  acc ++ Seq.fill(gd)(i)
-        go(newAcc, valueAcc + i * gd, i - 1)
+        val gd = greaterDivisor(placeLeft, k - valueAcc, i)
+        val newAcc = if((k - valueAcc) - (gd * i)  < placeLeft - gd) acc else acc ++ Seq.fill(gd)(i)
+        go(newAcc, newAcc.sum, i - 1)
       }
     }
 
     go(Seq.empty, 0, n)
+  }
+
+  private def getMasks(trace: Seq[Int]): Mask = {
+    trace.foldLeft(Array.empty[Set[Int]])((acc, e) => {
+      val set = (for(i <- trace.indices if i != e) yield i).toSet
+      acc.:+(set)
+    })
+  }
+
+  def fillMatrix(trace: Seq[Int]): Matrix = {
+    def buildResult(acc: Matrix, rowMask: Mask, colMask: Mask): Matrix = {
+      if(acc.length == trace.length)
+        acc
+      else {
+        val currentRow = trace.length - acc.length
+        currentRow
+      }
+
+    }
+
+    val mask = getMasks(trace)
+    buildResult(Array.empty, mask, mask)
   }
 
   def tryGetSolution(n: Int, k: Int) : Option[Matrix] = {
