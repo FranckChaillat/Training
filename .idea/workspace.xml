@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="035d2571-3e0e-4191-8c4d-c68ae34f5344" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="training" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1dRgsnCgtQBdXfoV5qjPaK7znco" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+  </component>
+  <component name="RunManager" selected="ScalaTest.RectangleOf1Test.should flag again the indexes where the 1 are in the following matrice">
+    <configuration name="RectangleOf1Test.should build 2 matrices from input" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="training" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Test name" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="RectangleOf1Test" />
+      <option name="testName" value="should build 2 matrices from input" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleOf1Test.should collect collect information wether the 1's are in a 2 by 2 matrix full of 1" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="training" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Test name" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="RectangleOf1Test" />
+      <option name="testName" value="should collect collect information wether the 1's are in a 2 by 2 matrix full of 1" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleOf1Test.should flag again the indexes where the 1 are in the following matrice" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="training" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Test name" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="RectangleOf1Test" />
+      <option name="testName" value="should flag again the indexes where the 1 are in the following matrice" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.RectangleOf1Test.should flag again the indexes where the 1 are in the following matrice" />
+        <item itemvalue="ScalaTest.RectangleOf1Test.should build 2 matrices from input" />
+        <item itemvalue="ScalaTest.RectangleOf1Test.should collect collect information wether the 1's are in a 2 by 2 matrix full of 1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="035d2571-3e0e-4191-8c4d-c68ae34f5344" name="Default Changelist" comment="" />
+      <created>1592393528591</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592393528591</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="153" y="127" width="1667" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592397465641">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="153" y="127" width="1667" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/53.27.1867.1053@53.27.1867.1053" timestamp="1592397465641" />
+    <state x="764" y="470" width="434" height="174" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1592416676469">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="764" y="470" width="434" height="174" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/53.27.1867.1053@53.27.1867.1053" timestamp="1592416676469" />
+    <state width="436" height="506" key="DebuggerActiveHint" timestamp="1592396944859">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="436" height="506" key="DebuggerActiveHint/53.27.1867.1053@53.27.1867.1053" timestamp="1592396944859" />
+    <state x="769" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1592403576648">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="769" y="311" width="424" height="491" key="FileChooserDialogImpl/53.27.1867.1053@53.27.1867.1053" timestamp="1592403576648" />
+    <state width="1821" height="340" key="GridCell.Tab.0.bottom" timestamp="1592416329850">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.0.bottom/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329850" />
+    <state width="1821" height="340" key="GridCell.Tab.0.center" timestamp="1592416329849">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.0.center/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329849" />
+    <state width="1821" height="340" key="GridCell.Tab.0.left" timestamp="1592416329848">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.0.left/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329848" />
+    <state width="1821" height="340" key="GridCell.Tab.0.right" timestamp="1592416329849">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.0.right/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329849" />
+    <state width="1821" height="340" key="GridCell.Tab.1.bottom" timestamp="1592416329854">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.1.bottom/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329854" />
+    <state width="1821" height="340" key="GridCell.Tab.1.center" timestamp="1592416329850">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.1.center/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329850" />
+    <state width="1821" height="340" key="GridCell.Tab.1.left" timestamp="1592416329850">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.1.left/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329850" />
+    <state width="1821" height="340" key="GridCell.Tab.1.right" timestamp="1592416329851">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="1821" height="340" key="GridCell.Tab.1.right/53.27.1867.1053@53.27.1867.1053" timestamp="1592416329851" />
+    <state x="469" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1592416697783">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="469" y="131" width="1024" height="852" key="SettingsEditor/53.27.1867.1053@53.27.1867.1053" timestamp="1592416697783" />
+    <state x="153" y="127" width="1667" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592416645931">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="153" y="127" width="1667" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/53.27.1867.1053@53.27.1867.1053" timestamp="1592416645931" />
+    <state width="304" height="47" key="javadoc.popup.new" timestamp="1592415999796">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state width="304" height="47" key="javadoc.popup.new/53.27.1867.1053@53.27.1867.1053" timestamp="1592415999796" />
+  </component>
+</project>
